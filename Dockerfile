@@ -2,6 +2,8 @@
 ARG   PHP_VERSION="${PHP_VERSION:-7.3.3}"
 FROM  php:${PHP_VERSION}-fpm-alpine
 
+ADD     http://downloads3.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz /tmp/
+
 RUN     apk update                       && \
         \
         apk upgrade                      && \
