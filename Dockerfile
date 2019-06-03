@@ -56,6 +56,7 @@ RUN     apk update                       && \
             pdo_pgsql                                           \
             gmp                                                 \
             iconv                                               \
+            sockets                                             \
             gd                                              &&  \
         \
         tar -xvzf                                                       \
